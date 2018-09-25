@@ -1,10 +1,6 @@
-import util from './lib/util';
-import Timeout from './lib/timeout';
-import Queue from './lib/queue';
+let util = require("./lib/util");
+let Timeout = require("./lib/timeout");
 
-export default util;
+util.Timeout = Timeout;
 
-export {
-    Timeout,
-    Queue
-};
+module.exports = util;
